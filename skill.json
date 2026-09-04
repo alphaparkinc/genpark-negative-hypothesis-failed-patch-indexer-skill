@@ -1,0 +1,39 @@
+{
+  "name": "genpark-negative-hypothesis-failed-patch-indexer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Negative hypothesis and failed patch indexer preventing AI agents from repeating disproved code modifications in loops.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "coding-agent",
+  "tags": [
+    "codex-astra",
+    "anti-looping",
+    "failed-patches",
+    "negative-memory",
+    "code-repair"
+  ],
+  "inputs": {
+    "candidate_patch_intent": {
+      "type": "string"
+    },
+    "failure_reason": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "index_entry_id": {
+      "type": "string"
+    },
+    "collision_detected": {
+      "type": "boolean"
+    },
+    "recommended_divergence_strategy": {
+      "type": "string"
+    },
+    "failure_index_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
